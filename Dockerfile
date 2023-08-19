@@ -1,6 +1,6 @@
 From nginx
 copy . /usr/share/nginx/html
 WORKDIR website
-docker build -t mywebiste .
-docker run -d -p 8085:80 --name=website mywebsite
+docker build -t mywebsite .
+docker run -d -p 8085:80 --name=app-website mywebsite
 CMD sleep
